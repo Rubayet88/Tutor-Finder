@@ -87,12 +87,11 @@
             <a class="navbar-brand" href="#">WebSiteName</a>
             </div>
             <ul class="nav navbar-nav">
-            <li><a href="guardian.php">Guardian</a></li>
-            <li class="active"><a href="searchTutor.php">Search Tutor</a></li>
-            <li><a href="guardianPanel.php">Guardian Panel</a></li>
-            <li><a href="#">Account Settings</a></li>
+            <li><a href="tutor.php">Tutor</a></li>
+            <li><a href="searchTution.php">Search Tution</a></li>
+            <li><a href="tutorPanel.php">Tutor Panel</a></li>
+            <li class="active"><a href="applyGuarPost.php">Apply</a></li>
             <li><a href="logout.php"><?php echo '<span>&#10060</span>'?> Logout</a></li>
-            <li class="active"><a href="#">Apply</a></li>
 
             </ul>
         </div>
@@ -142,8 +141,8 @@
             
             <div class="card-body">
             <div class="desc">    Total request on this post:<p style="color:red; text-align:center;"><?php echo $count; ?></p></div>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
             <br>
             <?php
             $sql5 = "SELECT * FROM apply_g_post where post_id = $post_id  AND tutor_id = $userId";

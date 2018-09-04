@@ -69,7 +69,7 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="adtutorpost.php">Tutor Post</a></li>
             <li><a href="adstudentpost.php">Student Post</a></li>
-            <li><a href="#logoutm.php">Guardian Post</a></li>
+            <li><a href="adguardianpost.php">Guardian Post</a></li>
             <li><a href="logout.php"><?php echo '<span>&#10060</span>'?> Logout</a></li>
             <?php if(isset($_SESSION['un'])){
                 $un= $_SESSION['un'];
@@ -89,7 +89,7 @@
 </form>
 <div id="livesearch" style="border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;"></div>
 
-<h3><a href='convertxml.php' style='float:right;' class='btn btn-info'>Export as Xml</a></h3><br/><br/>
+
 <table class="table table-striped table-bordered table-condensed">
     <tr>
     <th>Post ID</th>
